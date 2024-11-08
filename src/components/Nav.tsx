@@ -25,7 +25,7 @@ const Nav = () => {
                 />
             </div>
 
-            <div className="flex justify-between items-center px-4 lg:px-16 lg:py-4 py-2 md:py-5 w-full top-0 z-10 relative bg-transparent">
+            <div className="flex justify-between items-center px-4 lg:px-16 lg:py-4 py-2 md:py-5 w-full top-0 z-20 relative bg-transparent">
                 {/* left - Logo */}
                 <div className="z-20">
                     <Image src={"/images/roamly.png"} alt="roamly" width={120} height={0} className="w-[22vw] md:w-[140px]" />
@@ -37,7 +37,7 @@ const Nav = () => {
                     <ul className="hidden md:flex lg:gap-16 md:gap-4">
                         <li>Destinations</li>
                         <Link href={"/hotels"}><li>Hotels</li></Link>
-                        <li>Flights</li>
+                        <Link href={"/flights"}><li>Flights</li></Link>
                         <Link href={"/booking"}><li>Bookings</li></Link>
                     </ul>
 
@@ -77,11 +77,12 @@ const Nav = () => {
                 <div
                     className={`${isOpen ? "block" : "hidden"
                         } absolute top-full left-0 w-full bg-white dark:bg-gray-800 text-black dark:text-white md:hidden z-50`}
+                    style={{ zIndex: 999 }}
                 >
                     <ul className="flex flex-col items-center gap-4 py-4">
                         <li>Destinations</li>
                         <Link href={"/hotels"}><li>Hotels</li></Link>
-                        <li>Flights</li>
+                        <Link href={"/flights"}><li>Flights</li></Link>
                         <Link href={"/booking"}><li>Bookings</li></Link>
                         <button className="w-full py-2 flex justify-center items-center gap-1">Login <span><IoLogInOutline className="block md:hidden text-[5vw]" /></span></button>
                         <button className="w-full py-2 flex justify-center items-center gap-1">
