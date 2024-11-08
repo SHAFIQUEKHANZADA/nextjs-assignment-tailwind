@@ -226,7 +226,7 @@ const Hotels = () => {
 
                             {/* Overlay */}
                             <div className='absolute inset-0 bg-orange-500 bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4'>
-                                <p className='text-white sm:text-lg text-[10px]'>City, Country</p>
+                                <p className='text-white sm:text-lg text-[10px]'>Dehli, India</p>
                                 <h2 className='text-white font-bold sm:text-lg text-[10px]'>Hotel Name</h2>
                                 <p className='text-white sm:text-lg text-[10px]'>Price: $100 per day</p>
                             </div>
