@@ -3,7 +3,7 @@ import Image from "next/image";
 const Company = () => {
   return (
     <div className="relative w-full lg:w-[80%] md:w-[80%] mx-auto overflow-hidden lg:mt-36 md:mt-36 mt-20 mb-16">
-      <div className="flex lg:gap-14 lg:py-14 md:gap-10 gap-1 animate-scroll lg:animate-none md:animate-none items-center">
+      <div className="flex lg:gap-14 lg:py-14 md:gap-10 gap-1 animate-scroll md:animate-none items-center">
         {/* Company Logo Containers */}
         <div className="h-[70px] w-[180px] hover:shadow-2xl flex items-center justify-center rounded-lg px-3 py-1 shrink-0">
           <Image
