@@ -1,7 +1,10 @@
 import Image from 'next/image'
+import { FaRegClock, FaSuitcase } from 'react-icons/fa';
 import { FaArrowRightLong, FaMapLocationDot } from 'react-icons/fa6';
-import { IoIosArrowDown } from 'react-icons/io';
+import { GrCurrency } from 'react-icons/gr';
+import { IoIosArrowDown, IoMdInformation } from 'react-icons/io';
 import { IoPerson, IoSearch } from 'react-icons/io5';
+import { MdAirplanemodeActive, MdOutlineFlight, MdOutlineFlightTakeoff } from 'react-icons/md';
 import { TbArrowsExchange } from 'react-icons/tb';
 import { TfiLocationArrow } from 'react-icons/tfi';
 
@@ -9,20 +12,20 @@ const Flights = () => {
     return (
         <div className=" relative  sm:pb-[20%] pb-[40%] overflow-x-hidden w-full">
             <div>
-                <div className="relative w-full mx-auto mt-8 rounded-[50px]">
+                <div className="relative w-full mx-auto mt-8 ">
                     {/* Background Image */}
-                    <div className="relative w-[90%] h-[80vh] md:h-[100]  mx-auto sm:rounded-[50px] rounded-[20px]">
+                    <div className="relative w-[90%] h-[80vh] md:h-[100]  mx-auto">
                         <Image
                             src="/images/map.jpg"
                             alt="map"
                             fill
-                            className="object-cover opacity-50"
+                            className="object-cover opacity-50 sm:rounded-[50px] rounded-[20px]"
                         />
                         {/* Dark Overlay */}
                         <div className="absolute inset-0 bg-black opacity-10 sm:rounded-[50px] rounded-[20px]"></div>
 
                         {/* Centered Text */}
-                        <div className="absolute inset-0 flex  sm:items-center left-[40px] pt-16 sm:pt-0 text-gray-500 text-3xl md:text-5xl">
+                        <div className="absolute inset-0 flex sm:items-center left-[40px] pt-28 sm:pt-0 text-gray-500 text-[10vw] font-bold md:text-6xl">
                             Flight <br /> Booking
                         </div>
 
@@ -33,7 +36,7 @@ const Flights = () => {
                                     alt="Airplane logo"
                                     width={110}
                                     height={90}
-                                    className="object-contain lg:h-[180px] lg:w-[280px] md:h-[180px] md:w-[280px]"
+                                    className="object-contain h-[140px] w-[150px] md:h-[180px] md:w-[280px]"
                                 />
                             </div>
                         </div>
@@ -42,7 +45,7 @@ const Flights = () => {
 
                 </div>
 
-                <div className='flex md:flex-row flex-col w-[90%] sm:mt-24 mt-10 mx-auto'>
+                <div className='flex md:flex-row flex-col w-[90%] sm:mt-24 mt-16 mx-auto'>
 
                     <div className='md:w-[30%] '>
                         <div className='flex flex-col gap-2'>
@@ -195,7 +198,7 @@ const Flights = () => {
                                 <div className="flex w-full justify-center">
                                     <div className="flex sm:flex-row flex-col gap-4 flex-grow">
                                         <div className="flex-grow">
-                                        <label htmlFor="name" className='sm:hidden block'>From</label>
+                                            <label htmlFor="name" className='sm:hidden block'>From</label>
                                             <input
                                                 type="date"
                                                 id="departure1"
@@ -203,7 +206,7 @@ const Flights = () => {
                                             />
                                         </div>
                                         <div className="flex-grow">
-                                        <label htmlFor="name" className='sm:hidden block'>To</label>
+                                            <label htmlFor="name" className='sm:hidden block'>To</label>
                                             <input
                                                 type="date"
                                                 id="departure2"
@@ -216,6 +219,79 @@ const Flights = () => {
                                 <button className="bg-gray-500  md:py-3 md:px-3 py-3 px-16  text-white md:rounded-[50%] rounded-[20px]">
                                     <IoSearch />
                                 </button>
+                            </div>
+                        </div>
+
+
+                        <div className='mt-16'>
+                      
+
+                            <div className='flex flex-col gap-2 w-full'>
+                                <div className='flex  justify-between pl-32 text-blue-600 font-bold text-lg'>
+                                    <span className='flex gap-2 justify-center items-center'><MdAirplanemodeActive className='rotate-[45deg]' /> Take off</span>
+                                    <span className='flex gap-2 justify-center items-center'><MdAirplanemodeActive className='rotate-[135deg]' /> Landing</span>
+                                    <span className='flex gap-2 justify-center items-center'><FaRegClock /> Total Time</span>
+                                    <span className='flex gap-2 justify-center items-center'> <sub>SAR</sub> 2,270.44</span>
+                                </div>
+
+                                <hr />
+                                <div className='flex'>
+                                    <div className='flex-1 flex flex-col items-center'>
+                                        <MdOutlineFlightTakeoff className='text-5xl' />
+
+                                        <p className='text-blue-300'>Airline</p>
+                                        <p className='text-blue-300'>XX-001</p>
+
+                                    </div>
+
+                                    <div className='flex-1'>
+
+
+                                        <div className=' text-blue-600'>
+                                            <h1 className='text-[16px] font-semibold'>Karachi</h1>
+                                            <p className='text-[12px]'>Pakistan International Airlines</p>
+                                        </div>
+
+                                        <div>
+                                            <p>Tue,29 Jan 2024 06.55</p>
+                                            <p>Economy</p>
+                                        </div>
+                                    </div>
+
+                                    <div className='flex-1'>
+
+
+                                        <div className=' text-blue-600'>
+                                        <h1 className='text-[16px] font-semibold'>Dubai</h1>
+                                            <p>Emirates</p>
+                                        </div>
+
+                                        <div>
+                                            <p className='text-blue-300'>Tue,29 Jan 2024 06.55</p>
+                                            <p>Economy</p>
+                                        </div>
+                                    </div>
+
+                                    <div className='flex-1 flex flex-col items-center'>
+                                        <p className='text-blue-300'>1 STOP</p>
+                                        <p className='text-blue-300'>6 Hrs 20 Min</p>
+
+                                    </div>
+
+                                    <div className='flex flex-1 flex-col gap-2 items-end'>
+                                        <div className='flex gap-3 text-gray-400'>
+                                           <span className='border text-[30px] font-extrabold border-gray-400 rounded-[50%]'><IoMdInformation /></span>
+                                           <span className='border text-[20px] px-1 justify-center flex items-center font-extrabold border-gray-400 rounded-[50%]'><GrCurrency /></span>
+                                           <span className='border text-[20px] px-1 justify-center flex items-center font-extrabold border-gray-400 rounded-[50%]'><FaSuitcase /></span>
+                                          
+                                        </div>
+
+                                     <div>
+                                     <button className='bg-orange-500 text-white px-4 py-2'>BOOK NOW</button>
+                                     </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
