@@ -4,7 +4,7 @@ import { FaArrowRightLong, FaMapLocationDot } from 'react-icons/fa6';
 import { GrCurrency } from 'react-icons/gr';
 import { IoIosArrowDown, IoMdInformation } from 'react-icons/io';
 import { IoPerson, IoSearch } from 'react-icons/io5';
-import { MdAirplanemodeActive, MdOutlineFlight, MdOutlineFlightTakeoff } from 'react-icons/md';
+import { MdAirplanemodeActive, MdOutlineFlightTakeoff } from 'react-icons/md';
 import { TbArrowsExchange } from 'react-icons/tb';
 import { TfiLocationArrow } from 'react-icons/tfi';
 
