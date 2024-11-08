@@ -9,28 +9,28 @@ const testimonials = [
         name: "Shafique Ur Rehman",
         ocupation: "Nextjs Developer",
         text: "Across the endless field, where twilight falls gently, the horizon blurs the line between what was and what will be. Each moment lingers, suspended like a forgotten note, in the symphony of a world unhurried by the passing hours.",
-        image: "/images/shafiq.jpeg",
+        image: "/shafiq.jpeg",
     },
     {
         id: 2,
         name: "Zayan Ahmed",
         ocupation: "Frontend Developer",
         text: "Beneath the silent moonlit river, the whispers of forgotten tales flow, drifting gently as if untouched by time. Shadows linger on the edge of dreams, where the past meets tomorrow in quiet contemplation.",
-        image: "/images/zayan.jpeg",
+        image: "/zayan.jpeg",
     },
     {
         id: 3,
         name: "Asharib Ali",
         ocupation: "Cloud Native Applied GenAI Engineer",
         text: "Through the winding forest path, where sunlight dapples softly, every step hums with the secrets of those who once wandered. Each tree bears witness to the silent echoes of stories untold, waiting to be discovered.",
-        image: "/images/asharib.jpeg",
+        image: "/asharib.jpeg",
     },
     {
         id: 4,
         name: "Daniyal Nagori",
         ocupation: "CEO of Cryptofleet, PIAIC, and GIAIC",
         text: "Upon the misty hillside, where dawn stretches its golden fingers, the land speaks of distant memories. The winds carry whispers of journeys long past, as the earth breathes in the quiet rhythm of time.",
-        image: "/images/daniyal.jpeg",
+        image: "/daniyal.jpeg",
     },
 ];
 
