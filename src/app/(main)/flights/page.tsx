@@ -10,7 +10,7 @@ import { TfiLocationArrow } from 'react-icons/tfi';
 
 const Flights = () => {
     return (
-        <div className=" relative  sm:pb-[20%] pb-[40%] overflow-x-hidden w-full">
+        <div className=" relative sm:pb-[10%] pb-[30%] overflow-x-hidden w-full">
             <div>
                 <div className="relative w-full mx-auto mt-8 ">
                     {/* Background Image */}
@@ -47,7 +47,7 @@ const Flights = () => {
 
                 <div className='flex md:flex-row flex-col w-[90%] sm:mt-24 mt-16 mx-auto'>
 
-                    <div className='md:w-[30%] '>
+                    <div className='md:w-[30%]'>
                         <div className='flex flex-col gap-2'>
                             <div className="border border-gray-300   p-4 w-full max-w-sm shadow-md">
                                 {/* Header with down arrow */}
@@ -223,21 +223,22 @@ const Flights = () => {
                         </div>
 
 
-                        <div className='mt-16'>
-                      
+                        <div className='sm:mt-16 mt-0'>
 
-                            <div className='flex flex-col gap-2 w-full'>
-                                <div className='flex  justify-between pl-32 text-blue-600 font-bold text-lg'>
-                                    <span className='flex gap-2 justify-center items-center'><MdAirplanemodeActive className='rotate-[45deg]' /> Take off</span>
-                                    <span className='flex gap-2 justify-center items-center'><MdAirplanemodeActive className='rotate-[135deg]' /> Landing</span>
-                                    <span className='flex gap-2 justify-center items-center'><FaRegClock /> Total Time</span>
-                                    <span className='flex gap-2 justify-center items-center'> <sub>SAR</sub> 2,270.44</span>
+
+                            <div className='flex flex-col gap-[0.8vw] w-full'>
+                                <div className='sm:flex hidden  justify-between pl-[14vw] pr-8 text-blue-600 font-bold  text-[18px]'>
+                                    <span className='flex  justify-center items-center'><MdAirplanemodeActive className='rotate-[45deg]' /> Take off</span>
+                                    <span className='flex  justify-center items-center'><MdAirplanemodeActive className='rotate-[135deg]' /> Landing</span>
+                                    <span className='flex  justify-center items-center'><FaRegClock /> Total Time</span>
+                                    <span className='flex  justify-center items-center'> <sub>SAR</sub> 2,270.44</span>
                                 </div>
 
-                                <hr />
-                                <div className='flex'>
+                                <hr className='sm:block hidden' />
+
+                                <div className='flex sm:flex-row flex-col sm:mt-0 mt-20 px-4 py-6 bg-slate-50 sm:px-8 sm:py-6 shadow-xl rounded-3xl'>
                                     <div className='flex-1 flex flex-col items-center'>
-                                        <MdOutlineFlightTakeoff className='text-5xl' />
+                                        <MdOutlineFlightTakeoff className='md:text-[3.6vw] text-[10vw]' />
 
                                         <p className='text-blue-300'>Airline</p>
                                         <p className='text-blue-300'>XX-001</p>
@@ -247,14 +248,18 @@ const Flights = () => {
                                     <div className='flex-1'>
 
 
+
+
                                         <div className=' text-blue-600'>
+
+                                            <span className='flex underline items-center sm:hidden my-2 text-orange-500'><MdAirplanemodeActive className='rotate-[45deg]' /> Take off</span>
                                             <h1 className='text-[16px] font-semibold'>Karachi</h1>
                                             <p className='text-[12px]'>Pakistan International Airlines</p>
                                         </div>
 
                                         <div>
-                                            <p>Tue,29 Jan 2024 06.55</p>
-                                            <p>Economy</p>
+                                            <p className='text-blue-300'>Tue,29 Jan 2024 06.55</p>
+                                            <p className='text-zinc-400'>Economy</p>
                                         </div>
                                     </div>
 
@@ -262,36 +267,107 @@ const Flights = () => {
 
 
                                         <div className=' text-blue-600'>
-                                        <h1 className='text-[16px] font-semibold'>Dubai</h1>
+
+                                            <span className='flex underline sm:hidden my-2 items-center text-orange-500'><MdAirplanemodeActive className='rotate-[135deg]' /> Landing</span>
+                                            <h1 className='text-[16px] font-semibold'>Dubai</h1>
                                             <p>Emirates</p>
                                         </div>
 
                                         <div>
                                             <p className='text-blue-300'>Tue,29 Jan 2024 06.55</p>
-                                            <p>Economy</p>
+                                            <p className='text-zinc-400'>Economy</p>
                                         </div>
                                     </div>
 
-                                    <div className='flex-1 flex flex-col items-center'>
-                                        <p className='text-blue-300'>1 STOP</p>
-                                        <p className='text-blue-300'>6 Hrs 20 Min</p>
+                                    <div className='flex items-cnter sm:items-start sm:gap-8'>
+                                        <div className='flex-1 flex flex-col items-center'>
+                                            <span className='flex underline sm:hidden my-2 items-center text-orange-500'><FaRegClock /> Total Time</span>
+                                            <p className='text-blue-300'>1 STOP</p>
+                                            <p className='text-blue-300'>6 Hrs 20 Min</p>
 
-                                    </div>
-
-                                    <div className='flex flex-1 flex-col gap-2 items-end'>
-                                        <div className='flex gap-3 text-gray-400'>
-                                           <span className='border text-[30px] font-extrabold border-gray-400 rounded-[50%]'><IoMdInformation /></span>
-                                           <span className='border text-[20px] px-1 justify-center flex items-center font-extrabold border-gray-400 rounded-[50%]'><GrCurrency /></span>
-                                           <span className='border text-[20px] px-1 justify-center flex items-center font-extrabold border-gray-400 rounded-[50%]'><FaSuitcase /></span>
-                                          
                                         </div>
 
-                                     <div>
-                                     <button className='bg-orange-500 text-white px-4 py-2'>BOOK NOW</button>
-                                     </div>
+                                        <div className='flex flex-1 flex-col gap-2 sm:items-end items-center'>
+                                            <span className='flex underline items-center sm:hidden  text-blue-500'> <sub>SAR</sub> 2,270.44</span>
+                                            <div className='flex sm:gap-3 gap-1 text-gray-400'>
+                                                <span className='border text-[30px] font-extrabold border-gray-400 rounded-[50%]'><IoMdInformation /></span>
+                                                <span className='border text-[20px] px-1 justify-center flex items-center font-extrabold border-gray-400 rounded-[50%]'><GrCurrency /></span>
+                                                <span className='border text-[20px] px-1 justify-center flex items-center font-extrabold border-gray-400 rounded-[50%]'><FaSuitcase /></span>
+
+                                            </div>
+
+                                            <div>
+                                                <button className='bg-orange-500 text-white sm:text-[14px] text-[12px] px-4 py-2'>BOOK NOW</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                
+                                <div className='flex sm:flex-row flex-col sm:mt-0 mt-20 px-4 py-6 bg-slate-50 sm:px-8 sm:py-6 shadow-xl rounded-3xl'>
+                                    <div className='flex-1 flex flex-col items-center'>
+                                        <MdOutlineFlightTakeoff className='md:text-[3.6vw] text-[10vw]' />
+
+                                        <p className='text-blue-300'>Airline</p>
+                                        <p className='text-blue-300'>XX-001</p>
+
+                                    </div>
+
+                                    <div className='flex-1'>
+
+
+
+
+                                        <div className=' text-blue-600'>
+
+                                            <span className='flex underline items-center sm:hidden my-2 text-orange-500'><MdAirplanemodeActive className='rotate-[45deg]' /> Take off</span>
+                                            <h1 className='text-[16px] font-semibold'>Karachi</h1>
+                                            <p className='text-[12px]'>Pakistan International Airlines</p>
+                                        </div>
+
+                                        <div>
+                                            <p className='text-blue-300'>Tue,29 Jan 2024 06.55</p>
+                                            <p className='text-zinc-400'>Economy</p>
+                                        </div>
+                                    </div>
+
+                                    <div className='flex-1'>
+
+
+                                        <div className=' text-blue-600'>
+
+                                            <span className='flex underline sm:hidden my-2 items-center text-orange-500'><MdAirplanemodeActive className='rotate-[135deg]' /> Landing</span>
+                                            <h1 className='text-[16px] font-semibold'>Dubai</h1>
+                                            <p>Emirates</p>
+                                        </div>
+
+                                        <div>
+                                            <p className='text-blue-300'>Tue,29 Jan 2024 06.55</p>
+                                            <p className='text-zinc-400'>Economy</p>
+                                        </div>
+                                    </div>
+
+                                    <div className='flex items-cnter sm:items-start sm:gap-8'>
+                                        <div className='flex-1 flex flex-col items-center'>
+                                            <span className='flex underline sm:hidden my-2 items-center text-orange-500'><FaRegClock /> Total Time</span>
+                                            <p className='text-blue-300'>1 STOP</p>
+                                            <p className='text-blue-300'>6 Hrs 20 Min</p>
+
+                                        </div>
+
+                                        <div className='flex flex-1 flex-col gap-2 sm:items-end items-center'>
+                                            <span className='flex underline items-center sm:hidden  text-blue-500'> <sub>SAR</sub> 2,270.44</span>
+                                            <div className='flex sm:gap-3 gap-1 text-gray-400'>
+                                                <span className='border text-[30px] font-extrabold border-gray-400 rounded-[50%]'><IoMdInformation /></span>
+                                                <span className='border text-[20px] px-1 justify-center flex items-center font-extrabold border-gray-400 rounded-[50%]'><GrCurrency /></span>
+                                                <span className='border text-[20px] px-1 justify-center flex items-center font-extrabold border-gray-400 rounded-[50%]'><FaSuitcase /></span>
+
+                                            </div>
+
+                                            <div>
+                                                <button className='bg-orange-500 text-white sm:text-[14px] text-[12px] px-4 py-2'>BOOK NOW</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
