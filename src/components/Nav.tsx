@@ -44,9 +44,9 @@ const Nav = () => {
                     {/* Buttons */}
                     <div className="hidden md:flex items-center gap-4 lg:gap-14">
                     <Link href={"/log-in"}>     <button>Login</button></Link>
-                        <button className="px-3 py-1 border border-zinc-950 rounded-sm shadow-inner">
+                    <Link href={"/sign-up"}>      <button className="px-3 py-1 border border-zinc-950 rounded-sm shadow-inner">
                             Sign up
-                        </button>
+                        </button></Link>
                     </div>
 
                     {/* Language Selector */}
@@ -85,9 +85,9 @@ const Nav = () => {
                         <Link href={"/flights"}><li>Flights</li></Link>
                         <Link href={"/booking"}><li>Bookings</li></Link>
                         <Link href={"/log-in"}>  <button className="w-full py-2 flex justify-center items-center gap-1">Login <span><IoLogInOutline className="block md:hidden text-[5vw]" /></span></button></Link>
-                        <button className="w-full py-2 flex justify-center items-center gap-1">
+                        <Link href={"/sign-up"}>     <button className="w-full py-2 flex justify-center items-center gap-1">
                             Sign up <span className="block md:hidden text-[5vw]"><MdPersonAddAlt1 /></span>
-                        </button>
+                        </button> </Link>
                     </ul>
                 </div>
             </div>
