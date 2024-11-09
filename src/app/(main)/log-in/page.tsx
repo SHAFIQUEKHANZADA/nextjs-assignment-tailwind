@@ -15,7 +15,7 @@ const LogIn = () => {
 
                 {/* Right side with the inputs */}
                 <div className=''>
-                    <div className='md:w-[37vw] w-[100vw] md:h-[500px] h-auto bg-slate-200 p-8  shadow-2xl'>
+                    <div className='md:w-[37vw] w-[95vw] md:h-[500px] h-auto bg-slate-200 p-8  shadow-2xl'>
                         <h1 className='text-3xl font-bold mb-6 text-center'>Login</h1>
                         <form className='space-y-6'>
                             <div>
