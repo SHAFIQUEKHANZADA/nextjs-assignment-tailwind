@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { IoIosPlay } from "react-icons/io"
 
 const Hero = () => {
@@ -20,8 +21,9 @@ const Hero = () => {
                 <p className="w-11/12 text-[#727692] lg:font-semibold font-light lg:text-[18px] text-[14px] mt-4">Built Wicket Longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
 
                 <div className="flex gap-7 mt-5">
-                    <button className="bg-[#F1A501] text-white text-sm rounded-md px-6 py-2 shadow-2xl">Find out more</button>
-
+                    <Link href={"/flights"}>
+                    <button className="bg-[#F1A501] text-white text-sm rounded-md px-6 py-[14px] shadow-2xl">Find out more</button>
+                    </Link>
                     <div className="relative flex items-center gap-4 py-1 group cursor-pointer">
                         <button className="bg-[#DF6951] shadow-2xl p-3 rounded-full text-white text-1xl"><IoIosPlay /></button>
                         <span className="text-[#727692]">Play Demo</span>

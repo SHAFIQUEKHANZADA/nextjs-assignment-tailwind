@@ -35,7 +35,7 @@ const Nav = () => {
                 <div className="flex items-center md:gap-[4vw] z-20">
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex lg:gap-16 md:gap-4">
-                        <li>Destinations</li>
+                        <Link href={"/"}><li>Home</li></Link>
                         <Link href={"/hotels"}><li>Hotels</li></Link>
                         <Link href={"/flights"}><li>Flights</li></Link>
                         <Link href={"/booking"}><li>Bookings</li></Link>
@@ -80,7 +80,7 @@ const Nav = () => {
                     style={{ zIndex: 999 }}
                 >
                     <ul className="flex flex-col items-center gap-4 py-4">
-                        <li>Destinations</li>
+                        <Link href={"/"}><li>Home</li></Link>
                         <Link href={"/hotels"}><li>Hotels</li></Link>
                         <Link href={"/flights"}><li>Flights</li></Link>
                         <Link href={"/booking"}><li>Bookings</li></Link>
